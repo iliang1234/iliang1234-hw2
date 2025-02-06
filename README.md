@@ -34,3 +34,6 @@ python app.py
 - Convert decimal to binary: Input "42" with input type "decimal" and output type "binary"
 - Convert text to decimal: Input "forty two" with input type "text" and output type "decimal"
 - Convert hexadecimal to text: Input "2a" with input type "hexadecimal" and output type "text"
+
+## Bug Detected
+Text to decimal (or other numerical bases) does not work for compound words (e.g. forty two, twenty two, one hundred, etc.). I also found that the text conversion to numerical values did not work for texts of numbers greater than 10, which this bugfix branch also addresses.
